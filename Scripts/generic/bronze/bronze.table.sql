@@ -464,16 +464,13 @@ BEGIN
         END
 
         ---------------------------------------------------------------------
-        -- Table: Drivers Championship
-        ---------------------------------------------------------------------
-
-        ---------------------------------------------------------------------
         -- Table: Teams Championship
         ---------------------------------------------------------------------
         IF OBJECT_ID('bronze.teams_championship', 'U') IS NULL
         BEGIN
             CREATE TABLE bronze.teams_championship 
             (
+                id INT IDENTITY(1,1) PRIMARY KEY,
                 pos NVARCHAR(10) NOT NULL,
                 participant VARCHAR(120) NOT NULL,
                 points NVARCHAR(10) NOT NULL,

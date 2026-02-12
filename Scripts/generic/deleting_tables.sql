@@ -5,7 +5,7 @@ DECLARE @SQL NVARCHAR(MAX);
 DECLARE drop_table_cursor CURSOR LOCAL FAST_FORWARD FOR
 SELECT TABLE_NAME
 FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_SCHEMA = 'bronze'
+WHERE TABLE_SCHEMA = 'bronze' -- Specify your schema here (bronze, silver, gold)
   AND TABLE_TYPE = 'BASE TABLE';
 
 -- Open cursor
