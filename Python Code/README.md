@@ -85,6 +85,8 @@ data_links.ipynb → all_csv_links.csv
 exploring_data.ipynb → Data Insights
      ↓
 SQL Bronze Layer (../Scripts/generic/bronze/)
+     ↓
+SQL Silver Layer (../Scripts/generic/bronze/)
 ```
 
 ## Supported Race Tracks
